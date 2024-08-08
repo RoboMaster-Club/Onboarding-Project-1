@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = Onboarding-NoRTOS
+TARGET = Onboarding_Project_1
 
 
 ######################################
@@ -150,8 +150,12 @@ LIBS = -lc -lm -lnosys
 LIBDIR = 
 LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
+ECHO_WARNING=echo "\033[33m[Warning]\033[0m"
+ECHO_SUCCESS=echo "\033[32m[Success]\033[0m"
+
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
+	@$(ECHO_SUCCESS) "Build Complete"
 
 
 #######################################
@@ -192,6 +196,7 @@ $(BUILD_DIR):
 #######################################
 clean:
 	-rm -fR $(BUILD_DIR)
+	@$(ECHO_SUCCESS) "Build Folder Removed"
   
 #######################################
 # dependencies
@@ -200,11 +205,8 @@ clean:
 
 # *** EOF ***
 
-ECHO_WARNING=echo "\033[33m[Warning]\033[0m"
-ECHO_SUCCESS=echo "\033[32m[Success]\033[0m"
-
 flash: $(BUILD_DIR)/$(TARGET).bin
 	@$(ECHO_WARNING) "Flashing the binary to the board"
 	@openocd -f board/st_nucleo_l4.cfg -c "init; reset halt; \
 	flash write_image erase $(BUILD_DIR)/$(TARGET).bin 0x08000000; reset run; shutdown"
-	@$(ECHO_SUCCESS) "Flashing complete"
+	@$(ECHO_SUCCESS) "Flashing Complete"
