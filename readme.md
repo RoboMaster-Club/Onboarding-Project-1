@@ -42,7 +42,7 @@ Don't hesitate to ask for help here, as this is the most confusing step.
 1. In order to get the codebase onto your local machine, simply clone the repository. Run the following command in your terminal.
 
 ```
-git clone ...
+git clone https://github.com/RoboMaster-Club/Onboarding-Project-1.git
 ```
 
 2. Now that the codebase is on your local machine, open it using VSCode, installed from Part 1.
