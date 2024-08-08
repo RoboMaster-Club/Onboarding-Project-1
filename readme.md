@@ -31,8 +31,11 @@ In order to complete this project you will need to download the following softwa
 - **OpenOCD** - Used for flashing and debugging. Install it using the appropriate package manager by running a command in your terminal.
   - Windows: `pacman -S openocd`
   - MacOS: `brew install openocd`
-- **Arm-Embedded Toolchain** - A collection of tools used to develop software for ARM Cortex MCUs. Install using the same process as OpenOCD. - Windows: `pacman -S arm-none-eabi-gcc` - MacOS: `brew install arm-none-eabi-gcc`
-  Don't hesitate to ask for help here, as this is the most confusing step.
+- **Arm-Embedded Toolchain** - A collection of tools used to develop software for ARM Cortex MCUs. Install using the same process as OpenOCD.
+  - Windows: `pacman -S arm-none-eabi-gcc`
+  - MacOS: `brew install arm-none-eabi-gcc`
+
+Don't hesitate to ask for help here, as this is the most confusing step.
 
 ### Part 2: Download the Codebase
 
