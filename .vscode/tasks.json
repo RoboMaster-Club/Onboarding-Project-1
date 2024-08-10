@@ -4,7 +4,12 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "make -j24 V=1 -s",
+            "osx": {
+                "command": "make -j V=1"
+            },
+            "windows": {
+                "command": "mingw32-make -j V=1"
+            },
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -14,17 +19,28 @@
         {
             "label": "clean",
             "type": "shell",
-            "command": "make clean",
+            "osx": {
+                "command": "make clean"
+            },
+            "windows": {
+                "command": "rmdir /s /q ${workspaceFolder}\\build"
+            },
             "problemMatcher": [],
         },
         {
             "label": "build and flash",
             "type": "shell",
-            "command": "make -j24 V=1; make flash",
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            }
+            "osx": {
+                "command": "make flash"
+            },
+            "windows": {
+                "command": "mingw32-make flash"
+            },
+            "dependsOn": [
+                "build"
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": []
         }
     ]
 }
