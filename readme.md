@@ -8,8 +8,6 @@ The end goal of this project is to write firmware for an embedded system in orde
 
 For many of you, this is your first time hearing about an embedded system, and that is OK! An embedded system is simply a small computer designed to perform a specific task and is often times integrated into larger system. This differs from a regular computer, which is more general-purpose. Embedded systems are usually less powerful and have limited resources, but they are much smaller and cheaper. They can be found in cars, medical equipment—or, in our case, a robot!
 
-![Embedded System Image](https://www.researchgate.net/profile/Jasti-Sateesh/publication/309115209/figure/fig1/AS:668930062438406@1536496763475/Block-diagram-of-the-embedded-system-with-sample-devices-attached.ppm)
-[image source](https://www.researchgate.net/figure/Block-diagram-of-the-embedded-system-with-sample-devices-attached_fig1_309115209)
 Some terms to understand:
 
 - **Hardware Abstraction Layer (HAL)**: A software layer that allows your application to directly interact with the hardware of the microcontroller.
