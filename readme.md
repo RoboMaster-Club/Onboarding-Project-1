@@ -8,6 +8,8 @@ The end goal of this project is to write firmware for an embedded system in orde
 
 For many of you, this is your first time hearing about an embedded system, and that is OK! An embedded system is simply a small computer designed to perform a specific task and is often times integrated into larger system. This differs from a regular computer, which is more general-purpose. Embedded systems are usually less powerful and have limited resources, but they are much smaller and cheaper. They can be found in cars, medical equipment—or, in our case, a robot!
 
+![Embedded System Image](https://www.researchgate.net/profile/Jasti-Sateesh/publication/309115209/figure/fig1/AS:668930062438406@1536496763475/Block-diagram-of-the-embedded-system-with-sample-devices-attached.ppm)
+[image source](https://www.researchgate.net/figure/Block-diagram-of-the-embedded-system-with-sample-devices-attached_fig1_309115209)
 Some terms to understand:
 
 - **Hardware Abstraction Layer (HAL)**: A software layer that allows your application to directly interact with the hardware of the microcontroller.
@@ -29,11 +31,14 @@ In order to complete this project you will need to download the following softwa
   - Windows users should install [MSYS2](https://www.msys2.org/)
   - MacOS users should install [Homebrew](https://brew.sh/)
 - **OpenOCD** - Used for flashing and debugging. Install it using the appropriate package manager by running a command in your terminal.
-  - Windows: `pacman -S openocd`
+  - Windows: `pacman -S mingw-w64-openocd`
   - MacOS: `brew install openocd`
 - **Arm-Embedded Toolchain** - A collection of tools used to develop software for ARM Cortex MCUs. Install using the same process as OpenOCD.
-  - Windows: `pacman -S arm-none-eabi-gcc`
+  - Windows: `pacman -S mingw-w64-arm-none-eabi-gcc`
   - MacOS: `brew install arm-none-eabi-gcc`
+- **Make** - Automates the build process using a Makefile.
+  - Windows: `pacman -S mingw-w64-make`
+  - MacOS: You should already have it installed, but if you don’t, then use `brew install make`
 
 Don't hesitate to ask for help here, as this is the most confusing step.
 
