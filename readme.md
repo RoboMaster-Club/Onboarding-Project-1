@@ -1,5 +1,9 @@
 # Onboarding Project - Introduction to Embedded 1
 
+## Overview
+
+The end goal of this project is to write firmware for an embedded system in order to blink an LED. The codebase will be set up for you, and all you have to do is write the actual blink function. This is mostly just familiarizing yourself with the necessary tools and the general layout of an STM32 codebase.
+
 ## Background info
 
 For many of you, this is your first time hearing about an embedded system, and that is OK! An embedded system is simply a small computer designed to perform a specific task and is often times integrated into larger system. This differs from a regular computer, which is more general-purpose. Embedded systems are usually less powerful and have limited resources, but they are much smaller and cheaper. They can be found in cars, medical equipment—or, in our case, a robot!
@@ -8,10 +12,6 @@ Some terms to understand:
 
 - **Hardware Abstraction Layer (HAL)**: A software layer that allows your application to directly interact with the hardware of the microcontroller.
 - **General Purpose Input/Output (GPIO)**: Pins on a microcontroller that can be configured as either inputs or outputs. They can be set to high (on) or low (off).
-
-## Overview
-
-The end goal of this project is to write firmware for an embedded system in order to blink an LED. The codebase will be set up for you, and all you have to do is write the actual blink function. This is mostly just familiarizing yourself with the necessary tools and the general layout of an STM32 codebase.
 
 ## Prerequisites
 
