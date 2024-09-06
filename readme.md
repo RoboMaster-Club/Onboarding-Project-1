@@ -29,13 +29,13 @@ In order to complete this project you will need to download the following softwa
   - Windows users should install [MSYS2](https://www.msys2.org/)
   - MacOS users should install [Homebrew](https://brew.sh/)
 - **OpenOCD** - Used for flashing and debugging. Install it using the appropriate package manager by running a command in your terminal.
-  - Windows: `pacman -S mingw-w64-openocd`
+  - Windows: `pacman -S mingw-w64-x86_64-openocd`
   - MacOS: `brew install openocd`
 - **Arm-Embedded Toolchain** - A collection of tools used to develop software for ARM Cortex MCUs. Install using the same process as OpenOCD.
-  - Windows: `pacman -S mingw-w64-arm-none-eabi-gcc`
-  - MacOS: `brew install arm-none-eabi-gcc`
+  - Windows: `pacman -S mingw-w64-x86_64-arm-none-eabi-gcc`
+  - MacOS: `brew install --cask gcc-arm-embedded`
 - **Make** - Automates the build process using a Makefile.
-  - Windows: `pacman -S mingw-w64-make`
+  - Windows: `pacman -S mingw-w64-x86_64-make`
   - MacOS: You should already have it installed, but if you don’t, then use `brew install make`
 
 Don't hesitate to ask for help here, as this is the most confusing step.
