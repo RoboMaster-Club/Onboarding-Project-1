@@ -37,6 +37,14 @@ In order to complete this project you will need to download the following softwa
 - **Make** - Automates the build process using a Makefile.
   - Windows: `pacman -S mingw-w64-x86_64-make`
   - MacOS: You should already have it installed, but if you don’t, then use `brew install make`
+- **ST-Link** - Flashes the firmware to STM32 microcontrollers and enables debugging.
+  - Windows: `pacman -S mingw-w64-x86_64-stlink`
+  - MacOS: `brew install stlink`.
+
+**Important!** - Add your tools to PATH variable so that they can be accessed from anywhere in the terminal.
+- Windows: Follow the instructions from [this article](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) to add `C:\MinGW\bin` to PATH.
+- MacOS: Use a text editor to add the following line to your shell’s configuration file (e.g., .bashrc, .zshrc): `export PATH="/opt/homebrew/bin:$PATH"`.
+- Note that the install location may be different for you, update your enviroment variable as necessary.
 
 Don't hesitate to ask for help here, as this is the most confusing step.
 
