@@ -42,7 +42,7 @@ In order to complete this project you will need to download the following softwa
   - MacOS: `brew install stlink`.
 
 **Important!** - Add your tools to PATH variable so that they can be accessed from anywhere in the terminal.
-- Windows: Follow the instructions from [this article](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) to add `C:\MinGW\bin` to PATH.
+- Windows: Follow the instructions from [this article](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/) to add `C:\msys64\mingw64\bin` to PATH.
 - MacOS: Use a text editor to add the following line to your shell’s configuration file (e.g., .bashrc, .zshrc): `export PATH="/opt/homebrew/bin:$PATH"`.
 - Note that the install location may be different for you, update your enviroment variable as necessary.
 
